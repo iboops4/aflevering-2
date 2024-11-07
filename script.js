@@ -10,7 +10,7 @@ function addDivWithAlbum(album) {
     
     const albumDiv = document.createElement('div');
     albumDiv.classList.add('album');
-
+//hej
     const albumInfo = document.createElement('p');
     albumInfo.textContent = `${album.artist}: ${album.album} | Album contains ${album.totalTracks} tracks`;
 
