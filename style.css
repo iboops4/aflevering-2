@@ -1,0 +1,127 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #2D3E50;
+    color: #F0F0F0; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+
+h1 {
+    font-size: 3rem;
+    margin-bottom: 40px;
+    color: #FF6F61; 
+    text-align: center;
+}
+
+
+#albumContainer {
+    width: 100%;
+    max-width: 1200px;
+    padding: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+    background-color: #3C4A63; 
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+
+.album {
+    background-color: #4A5D74;
+    border: 1px solid #5A6B7A;
+    border-radius: 12px;
+    padding: 20px;
+    flex: 1 1 250px;
+    max-width: 300px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.album:hover {
+    transform: scale(1.03);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+}
+
+.album p {
+    font-size: 1.1rem;
+    color: #D1D8E1;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+.album button {
+    background-color: #FF6F61; 
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    font-size: 1.1em;
+    cursor: pointer;
+    border-radius: 8px;
+    width: 100%;
+    transition: background-color 0.3s;
+}
+
+.album button:hover {
+    background-color: #D95C47; 
+}
+
+
+.album ul {
+    list-style-type: none;
+    padding-left: 0;
+    margin-top: 15px;
+    font-size: 1rem;
+}
+
+.album ul li {
+    background-color: #5A6B7A; 
+    margin: 10px 0;
+    padding: 12px;
+    border-radius: 8px;
+    border: 1px solid #6A7B8D;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.album ul li:hover {
+    background-color: #4A5D74; 
+    transform: translateX(5px);
+}
+
+.album ul li span {
+    font-weight: bold;
+}
+
+.album ul li .track-time {
+    font-style: italic;
+    color: #A9B3C1; 
+}
+
+
+.album .show-more {
+    margin-top: 20px;
+    background-color: #FF6F61;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 8px;
+}
+
+.album .show-more:hover {
+    background-color: #D95C47;
+}
